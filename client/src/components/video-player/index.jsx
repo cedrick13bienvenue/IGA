@@ -117,7 +117,7 @@ function VideoPlayer({
 
   useEffect(() => {
     if (played === 1) {
-      onProgressUpdate({
+      onProgressUpdate?.({
         ...progressData,
         progressValue: played,
       });

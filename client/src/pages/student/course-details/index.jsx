@@ -202,6 +202,7 @@ function StudentViewCourseDetailsPage() {
                         ? () => handleSetFreePreview(curriculumItem)
                         : null
                     }
+                    key={index}
                   >
                     {curriculumItem?.freePreview ? (
                       <PlayCircle className="mr-2 h-4 w-4" />
@@ -264,10 +265,11 @@ function StudentViewCourseDetailsPage() {
           <div className="flex flex-col gap-2">
             {studentViewCourseDetails?.curriculum
               ?.filter((item) => item.freePreview)
-              .map((filteredItem) => (
+              .map((filteredItem, index) => (
                 <p
                   onClick={() => handleSetFreePreview(filteredItem)}
                   className="cursor-pointer text-[16px] font-medium"
+                  key={index}
                 >
                   {filteredItem?.title}
                 </p>

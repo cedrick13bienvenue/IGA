@@ -79,8 +79,8 @@ function InstructorDashboardpage() {
         <div className="max-w-7xl mx-auto">
           <h1 className="text-3xl font-bold mb-8">Dashboard</h1>
           <Tabs value={activeTab} onValueChange={setActiveTab}>
-            {menuItems.map((menuItem) => (
-              <TabsContent value={menuItem.value}>
+            {menuItems.map((menuItem, index) => (
+              <TabsContent value={menuItem.value} key={index}>
                 {menuItem.component !== null ? menuItem.component : null}
               </TabsContent>
             ))}
