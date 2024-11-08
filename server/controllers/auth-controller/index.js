@@ -12,7 +12,7 @@ const registerUser = async (req, res) => {
   if (existingUser) {
     return res.status(400).json({
       success: false,
-      message: "User name or user email already exists",
+      message: "Username or Email already exists",
     });
   }
 
