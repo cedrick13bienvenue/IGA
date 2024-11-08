@@ -1,5 +1,5 @@
 import { courseCategories } from "@/config";
-import banner from "../../../../public/banner-img.png";
+import g5 from "../../../../public/g5.png";
 import { Button } from "@/components/ui/button";
 import { useContext, useEffect } from "react";
 import { StudentContext } from "@/context/student-context";
@@ -56,16 +56,24 @@ function StudentHomePage() {
     <div className="min-h-screen bg-white">
       <section className="flex flex-col lg:flex-row items-center justify-between py-8 px-4 lg:px-8">
         <div className="lg:w-1/2 lg:pr-12">
-          <h1 className="text-4xl font-bold mb-4">Learning thet gets you</h1>
+          <h1 className="text-4xl font-bold mb-4">
+            Empowering Skills for a Bright Future
+          </h1>
           <p className="text-xl">
-            Skills for your present and your future. Get Started with US
+            Join us in bridging the gap between education and the real world.
+            IGA offers courses designed to equip you with skills that align with
+            today’s job market demands, specifically tailored to the needs and
+            growth areas in Rwanda and beyond. Whether you're interested in
+            technology, business, or professional development, our platform
+            connects you with top instructors and a vibrant community of
+            learners.
           </p>
         </div>
         <div className="lg:w-full mb-8 lg:mb-0">
           <img
-            src={banner}
+            src={g5}
             width={600}
-            height={400}
+            height={100}
             className="w-full h-auto rounded-lg shadow-lg"
           />
         </div>
@@ -86,7 +94,7 @@ function StudentHomePage() {
         </div>
       </section>
       <section className="py-12 px-4 lg:px-8">
-        <h2 className="text-2xl font-bold mb-6">Featured COourses</h2>
+        <h2 className="text-2xl font-bold mb-6">Featured Courses</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {studentViewCoursesList && studentViewCoursesList.length > 0 ? (
             studentViewCoursesList.map((courseItem) => (

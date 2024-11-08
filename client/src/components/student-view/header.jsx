@@ -1,4 +1,4 @@
-import { GraduationCap, TvMinimalPlay } from "lucide-react";
+import { TvMinimalPlay } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { Button } from "../ui/button";
 import { useContext } from "react";
@@ -17,10 +17,12 @@ function StudentViewCommonHeader() {
     <header className="flex items-center justify-between p-4 border-b relative">
       <div className="flex items-center space-x-4">
         <Link to="/home" className="flex items-center hover:text-black">
-          <GraduationCap className="h-8 w-8 mr-4 " />
-          <span className="font-extrabold md:text-xl text-[14px]">
-            LMS LEARN
-          </span>
+          <img
+            src="/I.svg"
+            alt="Iga Logo"
+            className="h-8 w-8 mr-4 rounded-full"
+          />
+          <span className="font-extrabold md:text-xl text-[14px]">IGA</span>
         </Link>
         <div className="flex items-center space-x-1">
           <Button
@@ -43,7 +45,7 @@ function StudentViewCommonHeader() {
             className="flex cursor-pointer items-center gap-3"
           >
             <span className="font-extrabold md:text-xl text-[14px]">
-              My Courses
+              Courses
             </span>
             <TvMinimalPlay className="w-8 h-8 cursor-pointer" />
           </div>

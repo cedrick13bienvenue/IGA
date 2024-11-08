@@ -1,14 +1,14 @@
 export const signUpFormControls = [
   {
     name: "userName",
-    label: "User Name",
+    label: "Username",
     placeholder: "Enter your user name",
     type: "text",
     componentType: "input",
   },
   {
     name: "userEmail",
-    label: "User Email",
+    label: "Email",
     placeholder: "Enter your user email",
     type: "email",
     componentType: "input",
@@ -25,7 +25,7 @@ export const signUpFormControls = [
 export const signInFormControls = [
   {
     name: "userEmail",
-    label: "User Email",
+    label: "Email",
     placeholder: "Enter your user email",
     type: "email",
     componentType: "input",
@@ -52,15 +52,8 @@ export const initialSignUpFormData = {
 
 export const languageOptions = [
   { id: "english", label: "English" },
-  { id: "spanish", label: "Spanish" },
+  { id: "kinyarwanda", label: "Kinyarwanda" },
   { id: "french", label: "French" },
-  { id: "german", label: "German" },
-  { id: "chinese", label: "Chinese" },
-  { id: "japanese", label: "Japanese" },
-  { id: "korean", label: "Korean" },
-  { id: "portuguese", label: "Portuguese" },
-  { id: "arabic", label: "Arabic" },
-  { id: "russian", label: "Russian" },
 ];
 
 export const courseLevelOptions = [
@@ -70,16 +63,21 @@ export const courseLevelOptions = [
 ];
 
 export const courseCategories = [
-  { id: "web-development", label: "Web Development" },
-  { id: "backend-development", label: "Backend Development" },
-  { id: "data-science", label: "Data Science" },
-  { id: "machine-learning", label: "Machine Learning" },
-  { id: "artificial-intelligence", label: "Artificial Intelligence" },
-  { id: "cloud-computing", label: "Cloud Computing" },
-  { id: "cyber-security", label: "Cyber Security" },
-  { id: "mobile-development", label: "Mobile Development" },
-  { id: "game-development", label: "Game Development" },
-  { id: "software-engineering", label: "Software Engineering" },
+  {id: "digital-marketing", label: "Digital Marketing"},
+  {id: "programming-fundementals", label: "Programming Fundementals"},
+  {id: "public-speaking-and-presentation-skills", label: "Public Speaking and Presentation Skills"},
+  {id: "data-analytics", label: "Data Analytics" },
+  {id: "agribusiness-management", label: "Agribusiness Management"}, 
+  {id: "project-management", label: "Project Management"},
+  {id: "web-development", label: "Web Development" },
+  {id: "team-leadership-and-team-building", label: "Leadership and Team Building"},
+  {id: "mobile-development", label: "Mobile Development" },
+  {id: "legal-and-regulatory-compliance", label: "Legal and Regulatory Compliance"},
+  {id: "digital-literacy", label: "Digital Literacy"},
+  {id: "entrepreneurship-and-startup-management", label: "Entrepreneurship and Startup Management"},
+  {id: "event-planning-and-management", label: "Event Planning and Management"},
+  {id: "operations-management", label: "Operations Management"},
+  {id: "supply-chain-management-and-logistics", label: "Supply Chain Management and Logistics"},
 ];
 
 export const courseLandingPageFormControls = [
